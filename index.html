@@ -34,12 +34,12 @@
             </nav>
         </div>
         <div class="hamburger-menu-container hide-on-desktop">
-            <img id="hamburger-menu" onclick="toggleWrapperClass" class="hide-on-desktop"
+            <img id="hamburger-menu" onclick="toggleWrapperClass()" class="hide-on-desktop"
                 src="images/Icon material-menu.png" alt="hamburger menu icon">
             <div id="mob-nav" class="mobile-wrapper hide-on-desktop">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="contact-us.html">Contact</a>
                 <a href="#">Cancer Awareness Banquet</a>
             </div>
         </div>
@@ -229,10 +229,14 @@
     <script>
         function toggleWrapperClass() {
             let mobNavEl = document.getElementById("mob-nav")
-            if (mobNavEl.style.display === "none") {
+            if (mobNavEl.style.display === "flex") {
+                mobNavEl.style.display = "none"
+            } else  
                 mobNavEl.style.display = "flex"
-            } else { mobNavEl.style.display = "none" }
+        
         }
+
+       
     </script>
 </body>
 

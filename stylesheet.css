@@ -135,7 +135,7 @@ header {
 
 main {
     display: block;
-    width: 100%;
+    width: 100vw;
     background-color: #1f2446;
     color: white;
     font-family: 'Open Sans', sans-serif;
